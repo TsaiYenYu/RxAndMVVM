@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RxViewController.swift
 //  RxAndMVVM
 //
 //  Created by 金融研發一部-蔡彥佑 on 2022/1/28.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RxViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
