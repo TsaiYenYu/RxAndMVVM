@@ -3,27 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6FB03A2193EE42F61323465 /* Pods_RxAndMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B445580562DE308CE58B48 /* Pods_RxAndMVVM.framework */; };
 		AC549FB927A39FA7008246B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC549FB827A39FA7008246B2 /* AppDelegate.swift */; };
 		AC549FBB27A39FA7008246B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC549FBA27A39FA7008246B2 /* SceneDelegate.swift */; };
-		AC549FBD27A39FA7008246B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC549FBC27A39FA7008246B2 /* ViewController.swift */; };
-		AC549FC027A39FA7008246B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC549FBE27A39FA7008246B2 /* Main.storyboard */; };
 		AC549FC227A39FA8008246B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC549FC127A39FA8008246B2 /* Assets.xcassets */; };
 		AC549FC527A39FA8008246B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC549FC327A39FA8008246B2 /* LaunchScreen.storyboard */; };
+		AC549FCF27A3A039008246B2 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC549FCD27A3A039008246B2 /* RxViewController.swift */; };
+		AC549FD027A3A039008246B2 /* RxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC549FCE27A3A039008246B2 /* RxViewController.xib */; };
+		AC549FD427A3A051008246B2 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC549FD227A3A051008246B2 /* MVVMViewController.swift */; };
+		AC549FD527A3A051008246B2 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC549FD327A3A051008246B2 /* MVVMViewController.xib */; };
+		AC54A00227A3B642008246B2 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC54A00127A3B642008246B2 /* DataViewModel.swift */; };
+		AC54A00527A3BB6C008246B2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC54A00427A3BB6C008246B2 /* Data.swift */; };
+		AC54A00827A3BC7E008246B2 /* FakeApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC54A00727A3BC7E008246B2 /* FakeApiClient.swift */; };
+		AC54A00B27A3BCE9008246B2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC54A00927A3BCE9008246B2 /* CustomTableViewCell.swift */; };
+		AC54A00C27A3BCE9008246B2 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC54A00A27A3BCE9008246B2 /* CustomTableViewCell.xib */; };
+		AC54A01327A3C766008246B2 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC54A01127A3C766008246B2 /* MainTabBarViewController.swift */; };
+		AC54A01427A3C766008246B2 /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC54A01227A3C766008246B2 /* MainTabBarViewController.xib */; };
+		AC54A01627A3C89E008246B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC54A01527A3C89E008246B2 /* Main.storyboard */; };
+		AC54A01827A3C8B1008246B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC54A01727A3C8B1008246B2 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC549FE627A3A134008246B2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		43410482C570E27B870E27EA /* Pods-RxAndMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAndMVVM.debug.xcconfig"; path = "Target Support Files/Pods-RxAndMVVM/Pods-RxAndMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		73A07FAD8B8A7DE7E25121B5 /* Pods-RxAndMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAndMVVM.release.xcconfig"; path = "Target Support Files/Pods-RxAndMVVM/Pods-RxAndMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		AC549FB527A39FA7008246B2 /* RxAndMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxAndMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC549FB827A39FA7008246B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC549FBA27A39FA7008246B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC549FBC27A39FA7008246B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC549FBF27A39FA7008246B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC549FC127A39FA8008246B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC549FC427A39FA8008246B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC549FC627A39FA8008246B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC549FCD27A3A039008246B2 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		AC549FCE27A3A039008246B2 /* RxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxViewController.xib; sourceTree = "<group>"; };
+		AC549FD227A3A051008246B2 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		AC549FD327A3A051008246B2 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
+		AC54A00127A3B642008246B2 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		AC54A00427A3BB6C008246B2 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AC54A00727A3BC7E008246B2 /* FakeApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeApiClient.swift; sourceTree = "<group>"; };
+		AC54A00927A3BCE9008246B2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		AC54A00A27A3BCE9008246B2 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		AC54A01127A3C766008246B2 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		AC54A01227A3C766008246B2 /* MainTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
+		AC54A01527A3C89E008246B2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AC54A01727A3C8B1008246B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1B445580562DE308CE58B48 /* Pods_RxAndMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAndMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +70,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FB03A2193EE42F61323465 /* Pods_RxAndMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90F66ACA5A10D4059B502DA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1B445580562DE308CE58B48 /* Pods_RxAndMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98CB1759641DFA5DD9604B9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43410482C570E27B870E27EA /* Pods-RxAndMVVM.debug.xcconfig */,
+				73A07FAD8B8A7DE7E25121B5 /* Pods-RxAndMVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC549FAC27A39FA7008246B2 = {
 			isa = PBXGroup;
 			children = (
 				AC549FB727A39FA7008246B2 /* RxAndMVVM */,
 				AC549FB627A39FA7008246B2 /* Products */,
+				98CB1759641DFA5DD9604B9C /* Pods */,
+				90F66ACA5A10D4059B502DA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +117,56 @@
 			children = (
 				AC549FB827A39FA7008246B2 /* AppDelegate.swift */,
 				AC549FBA27A39FA7008246B2 /* SceneDelegate.swift */,
-				AC549FBC27A39FA7008246B2 /* ViewController.swift */,
-				AC549FBE27A39FA7008246B2 /* Main.storyboard */,
+				AC54A01127A3C766008246B2 /* MainTabBarViewController.swift */,
+				AC54A01227A3C766008246B2 /* MainTabBarViewController.xib */,
+				AC54A00127A3B642008246B2 /* DataViewModel.swift */,
+				AC54A00327A3BB61008246B2 /* Model */,
+				AC54A00627A3BC63008246B2 /* Service */,
+				AC549FD127A3A040008246B2 /* MVVM */,
+				AC549FCC27A3A007008246B2 /* RxSwift */,
 				AC549FC127A39FA8008246B2 /* Assets.xcassets */,
 				AC549FC327A39FA8008246B2 /* LaunchScreen.storyboard */,
+				AC54A01527A3C89E008246B2 /* Main.storyboard */,
+				AC54A01727A3C8B1008246B2 /* ViewController.swift */,
 				AC549FC627A39FA8008246B2 /* Info.plist */,
 			);
 			path = RxAndMVVM;
+			sourceTree = "<group>";
+		};
+		AC549FCC27A3A007008246B2 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AC549FCD27A3A039008246B2 /* RxViewController.swift */,
+				AC549FCE27A3A039008246B2 /* RxViewController.xib */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		AC549FD127A3A040008246B2 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				AC549FD227A3A051008246B2 /* MVVMViewController.swift */,
+				AC54A00927A3BCE9008246B2 /* CustomTableViewCell.swift */,
+				AC54A00A27A3BCE9008246B2 /* CustomTableViewCell.xib */,
+				AC549FD327A3A051008246B2 /* MVVMViewController.xib */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		AC54A00327A3BB61008246B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC54A00427A3BB6C008246B2 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC54A00627A3BC63008246B2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AC54A00727A3BC7E008246B2 /* FakeApiClient.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC549FC927A39FA8008246B2 /* Build configuration list for PBXNativeTarget "RxAndMVVM" */;
 			buildPhases = (
+				ADC176665F5BF1AE76D62805 /* [CP] Check Pods Manifest.lock */,
 				AC549FB127A39FA7008246B2 /* Sources */,
 				AC549FB227A39FA7008246B2 /* Frameworks */,
 				AC549FB327A39FA7008246B2 /* Resources */,
+				AC549FE627A3A134008246B2 /* Embed Frameworks */,
+				26FD881F7030CF00BF730012 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,21 +229,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC54A01627A3C89E008246B2 /* Main.storyboard in Resources */,
+				AC549FD527A3A051008246B2 /* MVVMViewController.xib in Resources */,
 				AC549FC527A39FA8008246B2 /* LaunchScreen.storyboard in Resources */,
+				AC54A00C27A3BCE9008246B2 /* CustomTableViewCell.xib in Resources */,
+				AC54A01427A3C766008246B2 /* MainTabBarViewController.xib in Resources */,
 				AC549FC227A39FA8008246B2 /* Assets.xcassets in Resources */,
-				AC549FC027A39FA7008246B2 /* Main.storyboard in Resources */,
+				AC549FD027A3A039008246B2 /* RxViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26FD881F7030CF00BF730012 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxAndMVVM/Pods-RxAndMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxAndMVVM/Pods-RxAndMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxAndMVVM/Pods-RxAndMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC176665F5BF1AE76D62805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxAndMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC549FB127A39FA7008246B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC549FBD27A39FA7008246B2 /* ViewController.swift in Sources */,
+				AC54A01827A3C8B1008246B2 /* ViewController.swift in Sources */,
+				AC54A00B27A3BCE9008246B2 /* CustomTableViewCell.swift in Sources */,
+				AC54A00527A3BB6C008246B2 /* Data.swift in Sources */,
+				AC549FD427A3A051008246B2 /* MVVMViewController.swift in Sources */,
+				AC54A01327A3C766008246B2 /* MainTabBarViewController.swift in Sources */,
 				AC549FB927A39FA7008246B2 /* AppDelegate.swift in Sources */,
+				AC549FCF27A3A039008246B2 /* RxViewController.swift in Sources */,
+				AC54A00227A3B642008246B2 /* DataViewModel.swift in Sources */,
+				AC54A00827A3BC7E008246B2 /* FakeApiClient.swift in Sources */,
 				AC549FBB27A39FA7008246B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +304,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC549FBE27A39FA7008246B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC549FBF27A39FA7008246B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC549FC327A39FA8008246B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +433,14 @@
 		};
 		AC549FCA27A39FA8008246B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43410482C570E27B870E27EA /* Pods-RxAndMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MR9G36Q956;
 				INFOPLIST_FILE = RxAndMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +454,14 @@
 		};
 		AC549FCB27A39FA8008246B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A07FAD8B8A7DE7E25121B5 /* Pods-RxAndMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MR9G36Q956;
 				INFOPLIST_FILE = RxAndMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

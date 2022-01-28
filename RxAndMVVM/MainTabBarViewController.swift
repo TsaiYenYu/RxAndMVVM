@@ -1,29 +1,39 @@
-//
-//  MainTabBarViewController.swift
-//  RxAndMVVM
-//
-//  Created by 金融研發一部-蔡彥佑 on 2022/1/28.
-//
-
 import UIKit
 
-class MainTabBarViewController: UITabBarController {
+class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupViewController()
     }
+    
+    fileprivate func setupViewController() {
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let mvvmVC = MVVMViewController()
+        let navMVVMVC = templateNavController(image: UIImage(systemName: "xmark"), rootViewController: mvvmVC, selectImage: UIImage(systemName: "pencil"))
+        navMVVMVC.title = "MVVM"
+        let rxVC = RxViewController()
+        let navRX = templateNavController(image: UIImage(systemName: "xmark"), rootViewController: rxVC, selectImage: UIImage(systemName: "pencil"))
+        navRX.title = "Rx"
+        tabBar.unselectedItemTintColor = .blue
+        tabBar.tintColor = .red
+        tabBar.barTintColor = .orange
+        viewControllers = [
+            navMVVMVC,
+            navRX,
+        ]
+        
     }
-    */
-
+    
+    fileprivate func templateNavController(image: UIImage?, rootViewController: UIViewController = UIViewController(), selectImage: UIImage? = nil) -> UINavigationController {
+        let viewNavController = UINavigationController(rootViewController: rootViewController)
+        if let image = image {
+            viewNavController.tabBarItem.image = image
+        }
+        if let selectImage = selectImage {
+            viewNavController.tabBarItem.selectedImage = selectImage
+        }
+        
+        return viewNavController
+    }
 }

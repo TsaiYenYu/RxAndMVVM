@@ -39,6 +39,21 @@ class DataViewModel {
             }
         }
     }
+    
+    func getDataDelay(closure: @escaping () -> Void){
+        showLoading?()
+        ApiClient.getDataFromServer { (success, data) in
+            self.hideLoading?()
+            if success {
+                self.createCell(datas: data!)
+                DispatchQueue.main.async {
+                    closure()
+                }
+            } else {
+                self.showError?()
+            }
+        }
+    }
 
     
     func getCellViewModel( at indexPath: IndexPath ) -> DataListCellViewModel {

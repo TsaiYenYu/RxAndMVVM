@@ -10,10 +10,25 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//
+//        // 設置底色
+//        self.window!.backgroundColor = UIColor.white
+//
+//        // 建立 UITabBarController
+//        let myTabBar = MainTabBarController()
+//
+//        // 設置根視圖控制器
+//        self.window!.rootViewController = myTabBar
+//        
+//        // 將 UIWindow 設置為可見的
+//        self.window!.makeKeyAndVisible()
+
         return true
     }
 
