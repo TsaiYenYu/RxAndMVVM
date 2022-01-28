@@ -1,2 +1,2 @@
-# MVVM架構寫出tableView RxSwift寫出tableView 
+# MVVM及RxSwift架構寫出tableView
 
